@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "failed Insertion";
     } 
     else {
-            header("location:createsurvey.php");
+            header("location:survey_direct.php");
             echo "Successfully added to Database";
     }
 } else {
