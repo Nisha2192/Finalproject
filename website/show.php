@@ -31,7 +31,7 @@
 					
 					<ul id="topnav"><!--start of navigation bar--->
                         
-                        <li><a href="https://github.com/Nisha2192/Assignment/tree/master/website">GitHuB</a></li>
+                        <li><a href="https://github.com/Nisha2192/Finalproject/tree/master/website">GitHuB</a></li>
                         <li><a class="live" href="show.php">Sign Up</a></li>
                         <li><a href="responsesurvey.php">Response Survey</a></li>
                         <li><a href="business.php">Home</a></li></b>
