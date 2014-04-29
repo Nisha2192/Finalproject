@@ -1,11 +1,14 @@
-<!----File name:createsurvey.php--->
+<!----File name:response_direct.php--->
 <!----Author's name: Nisha Dhanwani,kawaljeet kaur,navdeep kaur--->
 
-<!----File Description: create survey page--->
+
+
+<!----File Description: this is response redirect page--->
 
 
 
-<!----start of php--->
+<!--start of php--->
+
 <?php
 session_start();
     include 'connect.php';
@@ -19,10 +22,6 @@ $_SESSION["error"]= "";
     $password1 = $_POST["password"];
        
       
-    
-
-
-
 
    
 $query = "SELECT * FROM `login` WHERE `username` = '".$username."'";
@@ -70,23 +69,23 @@ else{
 
 
    ?>
-<!---end of php--->
 
 
-<html><!-- start of html-->
+<!--end of php--->
 
-	<head><!-- start of head-->
+<html><!--start of html--->
 
-		<link rel="stylesheet" type="text/css" href="css/stylesheet.css"><!-- stylesheet-->
-        <link rel="stylesheet" type="text/css" href="css/style1.css"><!-- stylesheet-->
-		
+	<head><!--start of head--->
+
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css"><!--stylesheet--->
+        <link rel="stylesheet" type="text/css" href="css/style1.css"><!--stylesheet--->
         
 	</head>
     
-    <body>
+    <body><!--start of body--->
       
-    		<div id="container">
-    		<div id="header">  
+    		<div id="container"><!--start of container--->
+    		<div id="header">  <!--start of header--->
             	<img id="logo" src="namelogo.jpg">
                 
         		<div id="name">
@@ -94,41 +93,23 @@ else{
                 	<h2>WELCOME TO SURVEY ZONE</h2>
                    
                </div><br><br>    
-                   <ul id="topnav"><!--navigation bar-->
+                   <ul id="topnav"><!--start of navigation bar--->
                         
 						
-                        <li><a href="https://github.com/Nisha2192/Assignment/tree/master/website">GitHuB</a></li>
+                        <li><a href="https://github.com/Nisha2192/Finalproject/tree/master/website">GitHuB</a></li>
                         <li><a href="show.php">Sign Up</a></li>
                         <li><a href="responsesurvey.php">Response Survey</a></li>
                         <li><a href="business.php">Home</a></li></b>
                 	</ul>
                    
 				   </div>  
-
 					<a href="business.php?login=false"><input type="button" value="Logout" id="logout" style="margin-top:20px; font-size:20px; float:right;"></a><br><!--Logout button--->
-					<form id="f3" method="post" action="surveyresult.php" name="resultform">
-					<h1> Create your Survey here..</h1>
-						
-						<h7>Enter the Question:1 </h7><br>
-						<textarea name="txt6" rows="3" cols="40" id="r1"> </textarea><!--text box--->
-						<br>
-						<h7>Enter the answer:</h7><br>
-						<textarea name="txt3" rows="2" cols="40" id="r1"> </textarea><!--text box-->
-						
-						<br><br>
-						<h7>Enter the Question:2 </h7><br>
-						<textarea name="txt4" rows="3" cols="40" id="r1"> </textarea><!--text box--->
-						<br>
-						<h7>Enter the answer:</h7><br>
-						<textarea name="txt5" rows="2" cols="40" id="r1"> </textarea><!--text box--->
-						
-						<br><br>
-						<input type="submit" name="submit" value="SUBMIT" id="r1" style="width:10%; height:4%;"/>
-						
-					</form>		
+					<h1>Survey Created Successfully!!</h1>
+				
                </div> 
 			   
-			   <div id="footer1"><!-- footer-->
+				
+			   <div id="footer1"><!--start of footer--->
 			   
 			  
                 	 
@@ -137,6 +118,6 @@ else{
                  
               </div>  
     
-    </body><!-- end of body-->
+    </body><!--end of body--->
 
-</html><!-- end of html-->
+</html><!--end of html--->
